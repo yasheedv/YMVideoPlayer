@@ -8,12 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		C133E2C723E97D17002758A5 /* YMVideoPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = C133E2C523E97D17002758A5 /* YMVideoPlayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C133E2DA23E97D61002758A5 /* YMVideoControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C133E2CE23E97D61002758A5 /* YMVideoControllers.swift */; };
+		C133E2DB23E97D61002758A5 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C133E2D023E97D61002758A5 /* StringExtension.swift */; };
+		C133E2DC23E97D61002758A5 /* YMVideoPlayer.xib in Resources */ = {isa = PBXBuildFile; fileRef = C133E2D223E97D61002758A5 /* YMVideoPlayer.xib */; };
+		C133E2DD23E97D61002758A5 /* YMVideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C133E2D323E97D61002758A5 /* YMVideoPlayer.swift */; };
+		C133E2DE23E97D61002758A5 /* YMVideoControllersDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C133E2D523E97D61002758A5 /* YMVideoControllersDelegate.swift */; };
+		C133E2DF23E97D61002758A5 /* YMPlayerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C133E2D623E97D61002758A5 /* YMPlayerDataSource.swift */; };
+		C133E2E023E97D61002758A5 /* Constats.swift in Sources */ = {isa = PBXBuildFile; fileRef = C133E2D823E97D61002758A5 /* Constats.swift */; };
+		C133E2E123E97D61002758A5 /* YMPlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C133E2D923E97D61002758A5 /* YMPlayerManager.swift */; };
+		C133E2E323E97D73002758A5 /* YMPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C133E2E223E97D73002758A5 /* YMPlayerViewController.swift */; };
+		C133E2F623E9815F002758A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C133E2F523E9815F002758A5 /* Assets.xcassets */; };
+		C133E2FE23E987C3002758A5 /* PopAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C133E2FD23E987C3002758A5 /* PopAnimator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C133E2C223E97D17002758A5 /* YMVideoPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YMVideoPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C133E2C523E97D17002758A5 /* YMVideoPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMVideoPlayer.h; sourceTree = "<group>"; };
 		C133E2C623E97D17002758A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C133E2CE23E97D61002758A5 /* YMVideoControllers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YMVideoControllers.swift; sourceTree = "<group>"; };
+		C133E2D023E97D61002758A5 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		C133E2D223E97D61002758A5 /* YMVideoPlayer.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YMVideoPlayer.xib; sourceTree = "<group>"; };
+		C133E2D323E97D61002758A5 /* YMVideoPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YMVideoPlayer.swift; sourceTree = "<group>"; };
+		C133E2D523E97D61002758A5 /* YMVideoControllersDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YMVideoControllersDelegate.swift; sourceTree = "<group>"; };
+		C133E2D623E97D61002758A5 /* YMPlayerDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YMPlayerDataSource.swift; sourceTree = "<group>"; };
+		C133E2D823E97D61002758A5 /* Constats.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constats.swift; sourceTree = "<group>"; };
+		C133E2D923E97D61002758A5 /* YMPlayerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YMPlayerManager.swift; sourceTree = "<group>"; };
+		C133E2E223E97D73002758A5 /* YMPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YMPlayerViewController.swift; sourceTree = "<group>"; };
+		C133E2F523E9815F002758A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C133E2FD23E987C3002758A5 /* PopAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopAnimator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,10 +68,69 @@
 		C133E2C423E97D17002758A5 /* YMVideoPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				C133E2FC23E987B8002758A5 /* Animation */,
+				C133E2CF23E97D61002758A5 /* Extension */,
+				C133E2D423E97D61002758A5 /* Protocols */,
+				C133E2D123E97D61002758A5 /* VideoPlayer */,
+				C133E2D723E97D61002758A5 /* YMPlayerManager */,
+				C133E2CD23E97D61002758A5 /* YMVideoControllers */,
+				C133E2E223E97D73002758A5 /* YMPlayerViewController.swift */,
+				C133E2F523E9815F002758A5 /* Assets.xcassets */,
 				C133E2C523E97D17002758A5 /* YMVideoPlayer.h */,
 				C133E2C623E97D17002758A5 /* Info.plist */,
 			);
 			path = YMVideoPlayer;
+			sourceTree = "<group>";
+		};
+		C133E2CD23E97D61002758A5 /* YMVideoControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C133E2CE23E97D61002758A5 /* YMVideoControllers.swift */,
+			);
+			path = YMVideoControllers;
+			sourceTree = "<group>";
+		};
+		C133E2CF23E97D61002758A5 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C133E2D023E97D61002758A5 /* StringExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		C133E2D123E97D61002758A5 /* VideoPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				C133E2D223E97D61002758A5 /* YMVideoPlayer.xib */,
+				C133E2D323E97D61002758A5 /* YMVideoPlayer.swift */,
+			);
+			path = VideoPlayer;
+			sourceTree = "<group>";
+		};
+		C133E2D423E97D61002758A5 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				C133E2D523E97D61002758A5 /* YMVideoControllersDelegate.swift */,
+				C133E2D623E97D61002758A5 /* YMPlayerDataSource.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		C133E2D723E97D61002758A5 /* YMPlayerManager */ = {
+			isa = PBXGroup;
+			children = (
+				C133E2D823E97D61002758A5 /* Constats.swift */,
+				C133E2D923E97D61002758A5 /* YMPlayerManager.swift */,
+			);
+			path = YMPlayerManager;
+			sourceTree = "<group>";
+		};
+		C133E2FC23E987B8002758A5 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				C133E2FD23E987C3002758A5 /* PopAnimator.swift */,
+			);
+			path = Animation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -121,6 +202,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C133E2F623E9815F002758A5 /* Assets.xcassets in Resources */,
+				C133E2DC23E97D61002758A5 /* YMVideoPlayer.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,6 +214,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C133E2DF23E97D61002758A5 /* YMPlayerDataSource.swift in Sources */,
+				C133E2FE23E987C3002758A5 /* PopAnimator.swift in Sources */,
+				C133E2E323E97D73002758A5 /* YMPlayerViewController.swift in Sources */,
+				C133E2DE23E97D61002758A5 /* YMVideoControllersDelegate.swift in Sources */,
+				C133E2E023E97D61002758A5 /* Constats.swift in Sources */,
+				C133E2DD23E97D61002758A5 /* YMVideoPlayer.swift in Sources */,
+				C133E2DB23E97D61002758A5 /* StringExtension.swift in Sources */,
+				C133E2DA23E97D61002758A5 /* YMVideoControllers.swift in Sources */,
+				C133E2E123E97D61002758A5 /* YMPlayerManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +359,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = YMVideoPlayer/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -290,6 +383,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = YMVideoPlayer/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
